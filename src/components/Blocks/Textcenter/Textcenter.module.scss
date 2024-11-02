@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+
+.textcenter {
+  max-width: 810px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (max-width: 1279px) {
+    padding: 0 px-to-rem(30);
+    box-sizing: border-box;
+  }
+}

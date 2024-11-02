@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  .first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 37px;
+    border-top: 4px solid $blue;
+    border-bottom: 1px solid $grey;
+    padding-inline: 6.25vw;
+
+    .home {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+  }
+  .second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 41px;
+    border-bottom: 1px solid $grey;
+    padding-inline: 6.25vw;
+    .logoBrand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+
+      .title {
+        font-family: $roboto;
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0;
+      }
+    }
+  }
+}

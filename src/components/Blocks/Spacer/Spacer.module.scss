@@ -1,0 +1,106 @@
+@import "../../../styles/variables.scss";
+
+.spacer {
+  display: block;
+  height: px-to-rem(16);
+
+  &.custom {
+    height: px-to-rem(0);
+
+    @media (min-width: 767px) {
+      height: px-to-rem(0);
+    }
+
+    @media (min-width: 1720px) {
+      height: px-to-rem(80);
+    }
+  }
+
+  &.very-small {
+    height: px-to-rem(32);
+
+    @media (max-width: 767px) {
+      height: px-to-rem(16);
+    }
+  }
+
+  &.smaller {
+    height: 3rem;
+
+    @media (max-width: 767px) {
+      height: 0rem;
+    }
+  }
+
+  &.smallest {
+    height: 7rem;
+
+    @media (max-width: 767px) {
+      height: 0rem;
+    }
+  }
+
+  &.small {
+    height: px-to-rem(64);
+
+    @media (max-width: 767px) {
+      height: px-to-rem(32);
+    }
+  }
+
+  &.medium {
+    height: px-to-rem(96);
+
+    @media (max-width: 767px) {
+      height: px-to-rem(48);
+    }
+  }
+
+  &.large {
+    height: px-to-rem(140);
+
+    @media (max-width: 767px) {
+      height: px-to-rem(80);
+    }
+  }
+
+  &.very-large {
+    height: px-to-rem(160);
+
+    @media (max-width: 767px) {
+      height: px-to-rem(80);
+    }
+  }
+
+  &.container-large {
+    height: px-to-rem(110);
+
+    @media (max-width: 767px) {
+      height: px-to-rem(30);
+    }
+  }
+
+  &.container-large2 {
+    height: px-to-rem(110);
+
+    @media (max-width: 767px) {
+      height: px-to-rem(0);
+    }
+  }
+
+  &.container-mid {
+    height: px-to-rem(70);
+
+    @media (max-width: 767px) {
+      height: px-to-rem(30);
+    }
+  }
+
+  &.container-small {
+    height: px-to-rem(60);
+
+    @media (max-width: 767px) {
+      height: px-to-rem(30);
+    }
+  }
+}

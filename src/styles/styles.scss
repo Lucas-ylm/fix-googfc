@@ -1,0 +1,17 @@
+// Variable
+@import "./variables.scss";
+
+@import "normalize.css";
+// HEADER / FOOTER
+@import "../components/Header/Header.module.scss";
+@import "../components/Footer/Footer.module.scss";
+// BLOCKS
+@import "../components/Blocks/Textcenter/Textcenter.module.scss";
+@import "../components/Blocks/Text/Text.module.scss";
+@import "../components/Blocks/AnimatedContainer/AnimatedContainer.module.scss";
+@import "../components/Blocks/Line/Line.module.scss";
+
+// COMPONENTS
+@import "../components/Section/Section.module.scss";
+@import "../components/Container/Container.module.scss";
+@import "../components/ToggleText/ToggleText.module.scss";

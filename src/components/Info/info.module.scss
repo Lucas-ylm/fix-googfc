@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+
+.info {
+  appearance: none;
+  background-color: transparent;
+  border: unset;
+  padding-inline: unset;
+
+  .description {
+    display: none;
+    font-family: var(--font-roboto);
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &:hover {
+    .description {
+      display: block;
+      position: absolute;
+      top: 2.8rem;
+      right: 2.2vw;
+      max-width: 20rem;
+      background-color: $white;
+      color: $black;
+      border: 1px solid $grey;
+      padding: 1.5rem;
+      font-size: 12px;
+      z-index: 1;
+      font-family: $roboto;
+      text-align: left;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      @media (min-width: 767px) {
+        right: 4.9vw;
+      }
+      &::before {
+        content: " ";
+        position: absolute;
+        right: 1.6rem;
+        top: -0.5rem;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 8px 8px 8px;
+        border-color: transparent transparent $white transparent;
+        z-index: 100;
+      }
+    }
+  }
+}

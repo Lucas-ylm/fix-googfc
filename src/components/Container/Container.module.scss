@@ -1,0 +1,74 @@
+@import "../../styles/variables.scss";
+
+.container {
+  position: relative;
+  max-width: $global-max-size;
+  width: 100%;
+  // padding-top: 4%;
+  // padding-bottom: 4%;
+  z-index: 2;
+  display: flex;
+  margin: 0 auto;
+
+  @media (max-width: 1023px) {
+    padding: 0 px-to-rem(20);
+    box-sizing: border-box;
+    z-index: 100;
+  }
+}
+
+.onRight {
+  flex-direction: row-reverse;
+}
+
+.containerText {
+  max-width: px-to-rem(810);
+  width: 100%;
+  padding: 60px 40px 20px;
+  background-color: white;
+  box-sizing: border-box;
+  max-height: 50rem;
+  overflow: auto;
+
+  @media (max-width: 1280px) {
+    max-width: px-to-rem(500);
+    max-height: none;
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 100%;
+    margin-top: 40%;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding: 20px 20px 20px;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+
+.containerOne {
+  max-width: px-to-rem(810);
+  width: 100%;
+  padding: 60px 40px 20px;
+  background-color: white;
+  box-sizing: border-box;
+  max-height: 50rem;
+  overflow: auto;
+
+  @media (max-width: 1280px) {
+    max-width: px-to-rem(500);
+    max-height: none;
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding: 20px 20px 20px;
+  }
+}

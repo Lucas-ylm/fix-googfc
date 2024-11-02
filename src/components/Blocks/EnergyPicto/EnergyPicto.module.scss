@@ -1,0 +1,43 @@
+@import "../../../styles/variables.scss";
+
+.class_energy {
+    max-width: 900px;
+    margin: auto;
+    padding: 3rem;
+    display: flex;
+
+    &__img {
+        @media (max-width: 768px) {
+            width: 100px;
+            height: 101px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        justify-content: center;
+    }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+
+  .text {
+    font-family: $inter-regular;
+    color: $black;
+    font-style: italic;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-top: 0;
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+
+    span {
+      display: block;
+      line-height: 1.5rem;
+      max-width: 22rem;
+    }
+  }
+}

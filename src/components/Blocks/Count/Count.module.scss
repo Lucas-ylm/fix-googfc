@@ -1,0 +1,43 @@
+@import "../../../styles/variables.scss";
+
+.small {
+  font-family: $barlow-bold;
+  @include font-size-lh-ls(60, 60, -1);
+  text-transform: uppercase;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(40, 40);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(20, 20);
+  }
+}
+
+.mid {
+  font-family: $barlow-bold;
+  @include font-size-lh-ls(80, 80, -1);
+  text-transform: uppercase;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(60, 60);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(35, 35);
+  }
+}
+
+.big {
+  font-family: $barlow-bold;
+  @include font-size-lh-ls(150, 150, -1);
+  text-transform: uppercase;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(80, 80);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(50, 50);
+  }
+}

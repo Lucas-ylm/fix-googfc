@@ -1,0 +1,325 @@
+@import "../../../styles/variables.scss";
+
+.line-wrapper {
+  overflow-y: hidden;
+  display: block;
+
+  > span {
+    display: inline-block;
+  }
+}
+
+.d_block {
+  display: block;
+}
+// FONT STYLE
+
+// HERO
+.hero_ontitle {
+  @include font-size-lh-ls(28, 40);
+  font-family: $barlow-bold;
+  margin-bottom: px-to-rem(11);
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(22, 32);
+    margin-bottom: px-to-rem(30);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(19, 22);
+    margin-bottom: px-to-rem(13);
+  }
+}
+
+.hero_title {
+  @include font-size-lh-ls(58, 75, 0);
+  font-family: $playfair-extra-bold;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(60, 60);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(39, 49);
+  }
+}
+
+.hero_text {
+  @include font-size-lh-ls(17, 35, 0);
+  font-family: $inter-bold;
+  margin: px-to-rem(72) 0 px-to-rem(-8);
+  max-width: px-to-rem(436);
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(16, 28);
+    margin: px-to-rem(30) 0 px-to-rem(-8);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(16, 23);
+    margin: px-to-rem(2) 0 px-to-rem(-8);
+  }
+}
+// END HERO
+
+// TEXT CENTER
+.text_regular {
+  font-family: $inter-regular;
+  @include font-size-lh-ls(16, 28, 0);
+  margin-top: 0;
+}
+
+.text_regular_bold {
+  font-family: $inter-semi-bold;
+  @include font-size-lh-ls(16, 28, 0);
+  margin-top: 0;
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(16, 25);
+  }
+}
+
+.text_semi_bold {
+  font-family: $inter-semi-bold;
+  @include font-size-lh-ls(20, 35, 0);
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(16, 25);
+  }
+}
+
+.text_bold {
+  font-family: $inter-bold;
+  @include font-size-lh-ls(20, 35, 0);
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(16, 23);
+  }
+}
+// END TEXT CENTER
+
+// CONTENT WITH IMAGE AND TEXT
+.title_small {
+  @include font-size-lh-ls(30, 40, -1);
+  font-family: $inter-bold;
+  text-transform: uppercase;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(22, 32);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(18, 28);
+  }
+}
+
+// ADD
+.ad_title {
+  font-family: $playfair-bold;
+  @include font-size-lh-ls(50, 70, -1);
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(30, 38);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(24, 32);
+  }
+}
+
+.ad_title_small {
+  font-family: $playfair-bold;
+  @include font-size-lh-ls(40, 60, -1);
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(30, 38);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(24, 32);
+  }
+}
+
+.ad_subtitle_bold {
+  @include font-size-lh-ls(12, 16, 0);
+  font-family: $inter-bold;
+  text-transform: uppercase;
+}
+
+.ad_subtitle {
+  @include font-size-lh-ls(12, 16, 0);
+  font-family: $inter-regular;
+  text-transform: uppercase;
+}
+// ADD
+
+// FOOTER NAV
+.footer_title {
+  font-family: $playfair-bold;
+  @include font-size-lh-ls(38, 50, -1);
+  color: $white;
+
+  // @media (max-width: 1280px) {
+  //   @include font-size-lh-ls(20, 20);
+  // }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(22, 30);
+  }
+}
+
+.footer_ontitle {
+  font-family: $inter-bold;
+  @include font-size-lh-ls(16, 22, -1);
+  color: $white;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(16, 16);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(16, 16);
+  }
+}
+// FOOTER END
+
+.style01 {
+  font-size: 1rem;
+}
+
+.style02 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.style03 {
+  font-size: 1.9rem;
+}
+
+.animatedBlock {
+  display: inline-block;
+}
+
+// BLOCK COUNT
+.count_big {
+  font-family: $barlow-bold;
+  @include font-size-lh-ls(36, 36, -1);
+  text-transform: uppercase;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(30, 30, -1);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(26, 26, -1);
+  }
+}
+
+.count_title_one {
+  font-family: $barlow-bold;
+  @include font-size-lh-ls(30, 30, -1);
+  text-transform: uppercase;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(26, 26, -1);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(22, 22, -1);
+  }
+}
+
+.count_desc_one {
+  font-family: $barlow-bold;
+  @include font-size-lh-ls(20, 20, -1);
+  text-transform: uppercase;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(16, 16, 0);
+  }
+}
+
+.count_small {
+  font-family: $barlow-bold;
+  @include font-size-lh-ls(20, 20, -1);
+  text-transform: uppercase;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(16, 16, 0);
+  }
+}
+
+// HOME
+.home_title {
+  @include font-size-lh-ls(85, 90);
+  font-family: $playfair-extra-bold;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(60, 60);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(49, 49);
+  }
+}
+
+.carroussel_title {
+  @include font-size-lh-ls(60, 75, 0);
+  font-family: $playfair-bold;
+
+  @media (max-width: 1280px) {
+    @include font-size-lh-ls(50, 65);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(40, 50);
+  }
+
+  @media (max-width: 450px) {
+    @include font-size-lh-ls(35, 45);
+  }
+}
+
+// CAROUSEL TITLE RESPONSIVE
+.carousel_title_responsive {
+  font-family: $inter-bold;
+  color: $black;
+  display: none;
+
+  @media (max-width: 1280px) {
+    display: block;
+    @include font-size-lh-ls(33, 40);
+    padding-left: px-to-rem(20);
+    padding-bottom: px-to-rem(30);
+  }
+
+  @media (max-width: 767px) {
+    @include font-size-lh-ls(18, 25);
+  }
+}
+
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}

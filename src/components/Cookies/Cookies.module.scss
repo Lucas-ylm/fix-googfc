@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+.cookies {
+  font-family: $frank;
+  font-size: 18px;
+  line-height: 28px;
+  color: $black;
+  margin-block: 2rem;
+  padding-inline: 2.8rem;
+  > p {
+    text-align: center;
+    margin: 0;
+  }
+  .redirection {
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: center;
+
+    .manage,
+    .legal {
+      text-decoration: underline;
+      font-family: $frank;
+      font-size: 18px;
+      line-height: 28px;
+      color: $black;
+    }
+    .manage {
+      cursor: pointer;
+    }
+  }
+}

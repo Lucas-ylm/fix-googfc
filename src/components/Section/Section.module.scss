@@ -1,0 +1,12 @@
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}

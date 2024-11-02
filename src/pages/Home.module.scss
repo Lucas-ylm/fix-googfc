@@ -1,0 +1,17 @@
+@import "../styles/variables.scss";
+
+.homeContainer {
+  height: calc(100dvh - px-to-rem(84));
+  color: white;
+  position: relative;
+  overflow: hidden;
+
+  svg {
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+    width: 2px;
+  }
+}

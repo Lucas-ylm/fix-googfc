@@ -1,0 +1,139 @@
+@import "../../styles/variables.scss";
+
+.nextButton {
+    transform: rotate(180deg);
+
+    @media (max-width: 1280px) {
+        position: absolute;
+        top: 0;
+        right: px-to-rem(-20);
+    }
+}
+
+.prevButton {
+    margin-left: 105px;
+
+    @media (max-width: 1280px) {
+        position: absolute;
+        top: 0;
+        left: px-to-rem(-20);
+        margin-left: 0;
+    }
+}
+
+  .button {
+    top: 50%;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 20px;
+    border: 1px solid #000;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: $barlow-bold;
+    background-color: $white;
+    @include font-size-lh-ls(16, 18);
+
+    @media (max-width: 1280px) {
+        top: 150px;
+    }
+
+    &:hover {
+        transition: border 0.2, background-color 0.2;
+        border: 1px solid #fff;
+        background-color: $black;
+    }
+  }
+
+.title {
+    font-family: $inter-bold;
+    @include font-size-lh-ls(30, 40, -1);
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+    @media (max-width: 1280px) {
+        display: none;
+    }
+}
+
+.boldText {
+    font-family: $inter-bold;
+    @include font-size-lh-ls(14, 28, 0);
+}
+
+.semiBoldText {
+    font-family: $inter-semi-bold;
+    @include font-size-lh-ls(14, 28, 0);
+}
+
+.normalText {
+    font-family: $inter-regular;
+    @include font-size-lh-ls(14, 28, 0);
+}
+
+.container_text {
+    padding-left: 105px;
+    padding-top: 20px;
+    margin-top: 40px;
+
+    @media (max-width: 1280px) {
+        padding: 0 50px 40px;
+        margin-top: 70px;
+     }
+}
+
+.position {
+    position: absolute;
+    left: 224px;
+    top: 230px;
+
+    @media (max-width: 1600px) {
+        left: 185px;
+    }
+
+    @media (max-width: 1280px) {
+        left: 50px;
+        top: 38px;
+    }
+
+    &.positionCustom {
+        top: 300px;
+
+        @media (max-width: 1600px) {
+            left: 185px;
+        }
+    
+        @media (max-width: 1280px) {
+            left: 50px;
+            top: 38px;
+        }
+    }
+}
+
+.currentSpan {
+    font-family: $barlow-bold;
+    @include font-size-lh-ls(14, 28, 0);
+    color: #000;
+}
+
+.span {
+    font-family: $barlow-bold;
+    @include font-size-lh-ls(14, 28, 0);
+    color: #B3B3B3;
+}
+
+.scroll {
+    max-height: 420px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+
+    @media (max-width: 1280px) {
+        overflow-y: auto;
+        max-height: 400px;
+    }
+}

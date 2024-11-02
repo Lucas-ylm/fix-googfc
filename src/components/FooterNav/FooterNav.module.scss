@@ -1,0 +1,8 @@
+.nav {
+    width: 50%;
+    position: relative;
+    
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}

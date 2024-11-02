@@ -1,0 +1,89 @@
+// COLORS
+$white: #fff;
+$black: #000;
+$blue: #026b9c;
+$grey: #eff0f3;
+
+// Variable
+// Barlow Condensed
+$roboto: var(--font-roboto), sans-serif; // Pour remplacer la Hel Neueu condensed bold
+$frank: var(--font-frank), sans-serif; // Pour remplacer la Hel Neueu condensed bold
+$barlow-bold: var(--barlow-bold), sans-serif; // Pour remplacer la Hel Neueu condensed bold
+
+// Inter
+$inter-light: var(--inter-light), sans-serif; // Pour remplacer la Hel Neueu light
+$inter-regular: var(--inter-regular), sans-serif; // Pour remplacer la Hel Neueu regular
+$inter-semi-bold: var(--inter-semi-bold), sans-serif; // Pour remplacer la Hel Neueu bold
+$inter-bold: var(--inter-bold), sans-serif; // Pour remplacer la Hel Neueu bold
+
+// Playfair Display
+$playfair-bold: var(--playfair-bold), serif; // Playfair Bold (700)
+$playfair-extra-bold: var(--playfair-extra-bold), serif; // Playfair Extra Bold (800)
+
+@mixin font-size-lh-ls(
+  $px-value,
+  // Valeur de la taille de police en px
+  $line-height: null,
+  // Line-height en rem ou px, par défaut nul
+  $letter-spacing: null,
+  // Letter-spacing en %, px, em, ou rem
+  $base-font-size: 16
+    // Taille de base pour la conversion en rem (par défaut 16px)
+) {
+  // Calculer la taille en rem
+  $rem-value: $px-value / $base-font-size;
+  font-size: #{$rem-value}rem;
+
+  // Si un line-height est fourni, l'appliquer (supporte les px et rem)
+  @if $line-height != null {
+    @if (unitless($line-height)) or (unit($line-height) == px) {
+      $line-height-rem: $line-height / $base-font-size;
+      line-height: #{$line-height-rem}rem;
+    } @else {
+      line-height: $line-height;
+    }
+  }
+
+  // Si un letter-spacing est fourni, l'appliquer
+  @if $letter-spacing != null {
+    // Appliquer letter-spacing pour les pourcentages et les unités valides
+    @if (
+      unit($letter-spacing) ==
+        "%" or
+        unit($letter-spacing) ==
+        px or
+        unit($letter-spacing) ==
+        rem or
+        unit($letter-spacing) ==
+        em
+    ) {
+      letter-spacing: $letter-spacing;
+    } @else if unitless($letter-spacing) {
+      // Si aucune unité, on considère que c'est en px
+      letter-spacing: #{$letter-spacing}px;
+    } @else {
+      @error "Invalid unit for letter-spacing. Accepted units: %, px, em, rem.";
+    }
+  }
+}
+
+@function px-to-rem($px, $base-font-size: 16) {
+  @return #{$px / $base-font-size}rem;
+}
+
+$global-max-size: px-to-rem(1340);
+$gutter: px-to-rem(20);
+
+.imgDesktop {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.imgMobile {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

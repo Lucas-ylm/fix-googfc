@@ -1,0 +1,54 @@
+.button_left,
+.button_right {
+  position: fixed;
+  top: 50%;
+  color: white;
+  padding: 7px 10px 7px 6px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  text-transform: uppercase;
+  background-color: #fff;
+  display: none;
+  animation: 2s ease-out fade;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+
+  svg {
+    width: 7px;
+    height: 11px;
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.button_left {
+  left: 0;
+}
+
+.button_right {
+  z-index: 2;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
